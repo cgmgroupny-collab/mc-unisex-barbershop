@@ -1,0 +1,1822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MC Unisex Barbershop — Central Islip, NY | Since 1998</title>
+<meta name="description" content="MC Unisex Barbershop — 28 years of premium cuts in Central Islip, NY. Fades, beards, kids cuts. Walk-ins welcome. Loyalty rewards program. Call (631) 439-5963.">
+<meta name="keywords" content="barbershop Central Islip, MC Unisex Barber, haircut Long Island, fade Central Islip, barber near me, beard trim Suffolk County">
+<meta property="og:title" content="MC Unisex Barbershop — Central Islip, NY">
+<meta property="og:description" content="28 years of premium cuts. Fades, beards, kids cuts. Walk-ins welcome.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/hero-cinematic.png">
+<link rel="canonical" href="https://mcunisexbarbershop.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --black:#0a0a0a;--black2:#111;--black3:#1a1a1a;--black4:#222;
+  --red:#C41E2A;--red-dark:#9B1720;--red-glow:rgba(196,30,42,.15);
+  --white:#f5f5f5;--gray:#888;--gray-light:#bbb;--gray-dark:#444;
+  --gold:#D4A853;
+  --font-display:'Bebas Neue',sans-serif;
+  --font-body:'Barlow',sans-serif;
+  --font-condensed:'Barlow Condensed',sans-serif;
+}
+html{font-size:16px;scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{background:var(--black);color:var(--white);font-family:var(--font-body);line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* ═══════ NAVBAR ═══════ */
+.navbar{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 0;transition:all .4s}
+.navbar.scrolled{background:rgba(10,10,10,.95);backdrop-filter:blur(12px);padding:10px 0;box-shadow:0 2px 20px rgba(0,0,0,.5)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 24px}
+.nav-logo{display:flex;align-items:center;gap:10px}
+.nav-logo img{height:50px;width:auto;border-radius:50%}
+.nav-logo-text{font-family:var(--font-display);font-size:1.6rem;letter-spacing:2px;line-height:1}
+.nav-logo-sub{font-family:var(--font-condensed);font-size:.65rem;letter-spacing:3px;color:var(--gray);text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+.nav-links a{font-family:var(--font-condensed);font-size:.85rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--gray-light);transition:color .2s;position:relative}
+.nav-links a:hover{color:var(--red)}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--red);transition:width .3s}
+.nav-links a:hover::after{width:100%}
+.nav-cta{background:var(--red);color:#fff;padding:8px 20px;border-radius:4px;font-family:var(--font-condensed);font-weight:700;font-size:.8rem;letter-spacing:1.5px;text-transform:uppercase;transition:all .2s;border:none;cursor:pointer}
+.nav-cta:hover{background:var(--red-dark);transform:translateY(-1px)}
+.nav-member{background:transparent;border:1px solid var(--gray-dark);color:var(--white);padding:8px 16px;border-radius:4px;font-family:var(--font-condensed);font-weight:600;font-size:.8rem;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:6px}
+.nav-member:hover{border-color:var(--red);color:var(--red)}
+.hamburger{display:none;background:none;border:none;color:var(--white);font-size:1.5rem;cursor:pointer}
+
+/* ═══════ HERO CINEMATIC PARALLAX ═══════ */
+.hero{position:relative;height:100vh;min-height:700px;display:flex;align-items:center;overflow:hidden}
+.hero-parallax-wrap{position:absolute;inset:0;overflow:hidden}
+.hero-parallax-bg{position:absolute;inset:-15%;width:130%;height:130%;background:url('assets/images/hero-cinematic.png') center/cover no-repeat;will-change:transform;transition:transform .05s linear}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(10,10,10,.88) 0%,rgba(10,10,10,.55) 40%,rgba(196,30,42,.12) 100%);z-index:1}
+.hero-grain{position:absolute;inset:0;opacity:.04;z-index:1;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* Particles */
+.hero-particles{position:absolute;inset:0;z-index:2;overflow:hidden;pointer-events:none}
+.particle{position:absolute;width:4px;height:4px;border-radius:50%;background:var(--red);opacity:0;animation:floatUp linear infinite}
+@keyframes floatUp{
+  0%{transform:translateY(0) translateX(0);opacity:0}
+  10%{opacity:.7}
+  90%{opacity:.4}
+  100%{transform:translateY(-100vh) translateX(30px);opacity:0}
+}
+
+.hero-content{position:relative;z-index:3;max-width:700px;padding:0 24px}
+
+/* Badge pulsing glow */
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(196,30,42,.15);border:1px solid rgba(196,30,42,.3);border-radius:30px;padding:6px 16px;margin-bottom:24px;font-family:var(--font-condensed);font-size:.75rem;letter-spacing:2px;text-transform:uppercase;color:var(--red);font-weight:600;animation:badgePulse 3s ease-in-out infinite}
+@keyframes badgePulse{0%,100%{box-shadow:0 0 10px rgba(196,30,42,.1)}50%{box-shadow:0 0 25px rgba(196,30,42,.35),0 0 50px rgba(196,30,42,.15)}}
+.hero-badge .dot{width:6px;height:6px;border-radius:50%;background:var(--red);animation:pulse 2s ease infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+/* Cinematic title reveal */
+.hero h1{font-family:var(--font-display);font-size:clamp(3.5rem,8vw,6.5rem);line-height:.9;letter-spacing:2px;margin-bottom:16px;perspective:600px}
+.hero h1 .red{color:var(--red)}
+.hero-letter{display:inline-block;opacity:0;transform:rotateX(-60deg) translateY(20px);animation:letterReveal .6s cubic-bezier(.16,1,.3,1) forwards}
+@keyframes letterReveal{to{opacity:1;transform:rotateX(0) translateY(0)}}
+
+.hero-sub{font-family:var(--font-condensed);font-size:1.15rem;color:var(--gray-light);letter-spacing:1px;margin-bottom:32px;max-width:500px;font-weight:300;opacity:0;animation:fadeUp .8s ease .8s forwards}
+@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
+.hero-sub{transform:translateY(15px)}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;opacity:0;animation:fadeUp .8s ease 1s forwards;transform:translateY(15px)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:4px;font-family:var(--font-condensed);font-weight:700;font-size:.85rem;letter-spacing:2px;text-transform:uppercase;cursor:pointer;transition:all .25s;border:none}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 4px 20px rgba(196,30,42,.3)}
+.btn-red:hover{background:var(--red-dark);transform:translateY(-2px);box-shadow:0 6px 30px rgba(196,30,42,.4)}
+.btn-outline{background:transparent;color:var(--white);border:1.5px solid var(--gray-dark)}
+.btn-outline:hover{border-color:var(--white);background:rgba(255,255,255,.05)}
+.btn-gold{background:var(--gold);color:var(--black);box-shadow:0 4px 20px rgba(212,168,83,.25)}
+.btn-gold:hover{background:#c49a45;transform:translateY(-2px)}
+
+/* Hero stats with count-up */
+.hero-stats{position:absolute;bottom:60px;right:60px;z-index:3;display:flex;gap:32px}
+.hero-stat{text-align:center}
+.hero-stat .num{font-family:var(--font-display);font-size:2.5rem;color:var(--red);line-height:1}
+.hero-stat .label{font-family:var(--font-condensed);font-size:.7rem;letter-spacing:2px;text-transform:uppercase;color:var(--gray)}
+.scroll-indicator{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:3;display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--gray);font-size:.65rem;letter-spacing:3px;text-transform:uppercase;font-family:var(--font-condensed);animation:bob 2s ease infinite}
+@keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+.scroll-indicator .line{width:1px;height:30px;background:linear-gradient(to bottom,var(--gray),transparent)}
+
+/* ═══════ PROMO BANNER ═══════ */
+.promo-banner{background:linear-gradient(90deg,var(--red-dark),var(--red),var(--red-dark));padding:16px 0;text-align:center;position:relative;overflow:hidden}
+.promo-banner::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent,transparent 20px,rgba(255,255,255,.03) 20px,rgba(255,255,255,.03) 40px)}
+.promo-banner-inner{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
+.promo-banner .promo-text{font-family:var(--font-condensed);font-size:1rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#fff}
+.promo-banner .promo-text strong{color:var(--gold);font-size:1.2rem}
+.promo-banner .btn-gold{padding:8px 20px;font-size:.75rem}
+
+/* ═══════ SECTION STYLES ═══════ */
+section{padding:100px 0}
+.section-label{font-family:var(--font-condensed);font-size:.7rem;letter-spacing:4px;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:12px}
+.section-title{font-family:var(--font-display);font-size:clamp(2.5rem,5vw,4rem);line-height:.95;letter-spacing:1px;margin-bottom:20px}
+.section-desc{font-size:1rem;color:var(--gray-light);max-width:550px;font-weight:300;line-height:1.7}
+
+/* ═══════ RED DIVIDER ═══════ */
+.red-divider{height:4px;background:linear-gradient(90deg,var(--red),var(--red-dark),transparent);margin:0}
+
+/* ═══════ SERVICES ═══════ */
+#services{background:var(--black2)}
+.services-header{display:grid;grid-template-columns:1fr auto;gap:32px;align-items:end;margin-bottom:48px}
+.services-header-img{width:280px;height:180px;object-fit:cover;border-radius:8px;border:1px solid rgba(255,255,255,.05)}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.service-card{background:var(--black3);border:1px solid rgba(255,255,255,.05);border-radius:6px;overflow:hidden;position:relative;transition:all .3s}
+.service-card:hover{border-color:rgba(196,30,42,.3);transform:translateY(-4px);box-shadow:0 8px 30px rgba(0,0,0,.3)}
+.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--red);transform:scaleX(0);transition:transform .3s;transform-origin:left;z-index:2}
+.service-card:hover::before{transform:scaleX(1)}
+.service-card-img{width:100%;height:160px;object-fit:cover;display:block}
+.service-card-body{padding:28px 24px}
+.service-name{font-family:var(--font-condensed);font-size:1.1rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}
+.service-desc{font-size:.82rem;color:var(--gray);margin-bottom:12px;font-weight:300}
+.service-price{font-family:var(--font-display);font-size:1.8rem;color:var(--red)}
+.service-price .from{font-size:.7rem;color:var(--gray);font-family:var(--font-condensed);letter-spacing:1px}
+
+/* ═══════ FREE CONSULTATION BANNER ═══════ */
+.consult-banner{background:var(--black3);border-top:4px solid var(--red);border-bottom:4px solid var(--red);padding:60px 0;position:relative;overflow:hidden}
+.consult-banner::before{content:'';position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(196,30,42,.1) 0%,transparent 70%);pointer-events:none}
+.consult-inner{display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.consult-text h2{font-family:var(--font-display);font-size:clamp(2.5rem,5vw,4rem);letter-spacing:2px;line-height:.95;margin-bottom:12px}
+.consult-text h2 span{color:var(--red)}
+.consult-text p{font-size:1rem;color:var(--gray-light);max-width:550px;font-weight:300;line-height:1.7;margin-bottom:16px}
+.consult-ctas{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.consult-ctas .phone-big{font-family:var(--font-display);font-size:2.2rem;color:var(--red);letter-spacing:2px}
+.consult-ctas .phone-big:hover{color:var(--white)}
+.consult-form{display:flex;gap:8px;align-items:stretch}
+.consult-form input{background:var(--black);border:1px solid var(--gray-dark);border-radius:4px;padding:10px 14px;font-size:.88rem;color:var(--white);font-family:var(--font-body);outline:none;width:200px;transition:border-color .2s}
+.consult-form input:focus{border-color:var(--red)}
+.consult-form .btn{padding:10px 18px}
+
+/* ═══════ BOOKING SYSTEM ═══════ */
+#booking{background:var(--black);position:relative;overflow:hidden}
+#booking::before{content:'';position:absolute;top:-200px;left:-200px;width:500px;height:500px;background:radial-gradient(circle,rgba(196,30,42,.06) 0%,transparent 70%);pointer-events:none}
+.booking-layout{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:48px}
+.booking-image{border-radius:12px;overflow:hidden;border:1px solid rgba(255,255,255,.05);position:sticky;top:120px}
+.booking-image img{width:100%;display:block}
+.booking-form{background:var(--black2);border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:32px;position:relative}
+.booking-steps{display:flex;gap:0;margin-bottom:28px;border-bottom:1px solid var(--gray-dark)}
+.booking-step-tab{flex:1;padding:12px 8px;text-align:center;font-family:var(--font-condensed);font-size:.72rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gray-dark);cursor:default;position:relative;transition:color .3s}
+.booking-step-tab.active{color:var(--red)}
+.booking-step-tab.done{color:var(--gold)}
+.booking-step-tab::after{content:'';position:absolute;bottom:-1px;left:0;right:0;height:2px;background:var(--red);transform:scaleX(0);transition:transform .3s}
+.booking-step-tab.active::after{transform:scaleX(1)}
+.booking-step-tab .step-num{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;border:1.5px solid currentColor;font-size:.65rem;margin-right:6px;transition:all .3s}
+.booking-step-tab.active .step-num{background:var(--red);border-color:var(--red);color:#fff}
+.booking-step-tab.done .step-num{background:var(--gold);border-color:var(--gold);color:var(--black)}
+
+.step-panel{display:none}
+.step-panel.active{display:block;animation:fadeIn .3s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* Service selection */
+.service-select-grid{display:grid;gap:8px}
+.service-select-item{display:flex;align-items:center;justify-content:space-between;background:var(--black3);border:2px solid rgba(255,255,255,.05);border-radius:6px;padding:14px 18px;cursor:pointer;transition:all .25s}
+.service-select-item:hover{border-color:rgba(196,30,42,.3)}
+.service-select-item.selected{border-color:var(--red);background:rgba(196,30,42,.08)}
+.service-select-item .svc-name{font-family:var(--font-condensed);font-size:.88rem;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.service-select-item .svc-price{font-family:var(--font-display);font-size:1.3rem;color:var(--red)}
+
+/* Date & time */
+.date-grid{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}
+.date-btn{background:var(--black3);border:2px solid rgba(255,255,255,.06);border-radius:6px;padding:10px 14px;text-align:center;cursor:pointer;transition:all .25s;min-width:70px}
+.date-btn:hover{border-color:rgba(196,30,42,.3)}
+.date-btn.selected{border-color:var(--red);background:rgba(196,30,42,.1)}
+.date-btn .d-day{font-family:var(--font-condensed);font-size:.65rem;letter-spacing:1px;text-transform:uppercase;color:var(--gray)}
+.date-btn .d-num{font-family:var(--font-display);font-size:1.3rem;color:var(--white);line-height:1.2}
+.date-btn .d-month{font-size:.6rem;color:var(--gray);font-family:var(--font-condensed);letter-spacing:1px;text-transform:uppercase}
+.date-btn.selected .d-day,.date-btn.selected .d-month{color:var(--red)}
+
+.time-label{font-family:var(--font-condensed);font-size:.72rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gray);margin-bottom:10px}
+.time-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.time-btn{background:var(--black3);border:1.5px solid rgba(255,255,255,.06);border-radius:4px;padding:8px;text-align:center;font-family:var(--font-condensed);font-size:.78rem;font-weight:600;letter-spacing:.5px;color:var(--gray-light);cursor:pointer;transition:all .2s}
+.time-btn:hover{border-color:rgba(196,30,42,.3);color:var(--white)}
+.time-btn.selected{border-color:var(--red);background:rgba(196,30,42,.1);color:var(--white)}
+
+/* Confirm step */
+.confirm-card{background:var(--black3);border:1px solid rgba(196,30,42,.2);border-radius:10px;padding:28px;margin-top:16px}
+.confirm-card h4{font-family:var(--font-display);font-size:1.4rem;letter-spacing:1px;margin-bottom:16px;color:var(--gold)}
+.confirm-row{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.04);font-size:.88rem}
+.confirm-row:last-child{border-bottom:none}
+.confirm-row .cr-label{color:var(--gray);font-family:var(--font-condensed);font-weight:600;letter-spacing:1px;text-transform:uppercase;font-size:.72rem}
+.confirm-row .cr-value{font-weight:500}
+
+.booking-nav{display:flex;gap:12px;margin-top:20px}
+.booking-nav .btn{flex:1;justify-content:center}
+
+/* My Bookings */
+.my-bookings{margin-top:32px}
+.my-bookings h3{font-family:var(--font-display);font-size:1.6rem;letter-spacing:1px;margin-bottom:16px}
+.booking-item{display:flex;align-items:center;justify-content:space-between;background:var(--black3);border:1px solid rgba(255,255,255,.05);border-radius:6px;padding:16px 20px;margin-bottom:8px;transition:border-color .2s}
+.booking-item:hover{border-color:rgba(196,30,42,.2)}
+.booking-item .bi-info{display:flex;flex-direction:column;gap:2px}
+.booking-item .bi-service{font-family:var(--font-condensed);font-weight:700;font-size:.88rem;letter-spacing:1px;text-transform:uppercase}
+.booking-item .bi-detail{font-size:.75rem;color:var(--gray);font-weight:300}
+.booking-item .bi-price{font-family:var(--font-display);font-size:1.3rem;color:var(--red)}
+.booking-item .bi-cancel{background:none;border:1px solid var(--gray-dark);color:var(--gray);padding:4px 10px;border-radius:3px;font-size:.65rem;font-family:var(--font-condensed);letter-spacing:1px;text-transform:uppercase;cursor:pointer;transition:all .2s}
+.booking-item .bi-cancel:hover{border-color:var(--red);color:var(--red)}
+
+/* Booking success animation */
+.booking-success{display:none;text-align:center;padding:40px 20px}
+.booking-success.show{display:block;animation:fadeIn .5s ease}
+.booking-success .check-circle{width:80px;height:80px;border-radius:50%;border:3px solid var(--gold);margin:0 auto 20px;display:flex;align-items:center;justify-content:center;font-size:2rem;color:var(--gold);animation:scaleIn .5s cubic-bezier(.16,1,.3,1)}
+@keyframes scaleIn{from{transform:scale(0)}to{transform:scale(1)}}
+.booking-success h3{font-family:var(--font-display);font-size:2rem;letter-spacing:1px;margin-bottom:8px}
+.booking-success p{color:var(--gray);font-size:.88rem;font-weight:300}
+
+/* ═══════ STYLE FINDER ═══════ */
+#style-finder{background:var(--black);position:relative;overflow:hidden}
+#style-finder::before{content:'';position:absolute;bottom:-200px;right:-200px;width:500px;height:500px;background:radial-gradient(circle,rgba(196,30,42,.06) 0%,transparent 70%);pointer-events:none}
+.style-finder-wrap{max-width:680px;margin:0 auto;margin-top:48px}
+.sf-question{display:none;animation:fadeIn .4s ease}
+.sf-question.active{display:block}
+.sf-question h3{font-family:var(--font-display);font-size:1.8rem;letter-spacing:1px;margin-bottom:24px;text-align:center}
+.sf-progress{display:flex;gap:6px;margin-bottom:32px;justify-content:center}
+.sf-progress-dot{width:40px;height:4px;border-radius:2px;background:var(--gray-dark);transition:background .3s}
+.sf-progress-dot.active{background:var(--red)}
+.sf-progress-dot.done{background:var(--gold)}
+.sf-options{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px}
+.sf-option{background:var(--black2);border:2px solid rgba(255,255,255,.06);border-radius:8px;padding:20px 12px;text-align:center;cursor:pointer;transition:all .25s}
+.sf-option:hover{border-color:rgba(196,30,42,.3);transform:translateY(-2px)}
+.sf-option.selected{border-color:var(--red);background:rgba(196,30,42,.08)}
+.sf-option-icon{width:60px;height:60px;margin:0 auto 12px;border-radius:50%;background:var(--black3);border:1px solid var(--gray-dark);display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:var(--red);transition:all .25s}
+.sf-option.selected .sf-option-icon{background:var(--red);color:#fff;border-color:var(--red)}
+.sf-option-label{font-family:var(--font-condensed);font-size:.82rem;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+
+/* Style Finder Result */
+.sf-result{display:none;animation:fadeIn .5s ease}
+.sf-result.active{display:block}
+.sf-result-card{background:linear-gradient(135deg,var(--black2),var(--black3));border:1px solid rgba(196,30,42,.2);border-radius:12px;overflow:hidden;max-width:600px;margin:0 auto}
+.sf-result-img{width:100%;height:220px;object-fit:cover}
+.sf-result-body{padding:32px}
+.sf-result-body h3{font-family:var(--font-display);font-size:2.2rem;letter-spacing:1px;margin-bottom:8px;color:var(--gold)}
+.sf-result-body .sf-why{font-size:.9rem;color:var(--gray-light);font-weight:300;line-height:1.7;margin-bottom:16px}
+.sf-result-body .sf-price{font-family:var(--font-display);font-size:2rem;color:var(--red);margin-bottom:20px}
+.sf-result-actions{display:flex;gap:12px;flex-wrap:wrap}
+.sf-result-actions .btn{flex:1;justify-content:center;min-width:180px}
+.sf-consult{text-align:center;margin-top:32px;padding:28px;background:var(--black2);border:1px solid rgba(255,255,255,.05);border-radius:8px}
+.sf-consult p{font-size:.92rem;color:var(--gray-light);font-weight:300;margin-bottom:16px}
+.sf-consult-form{display:flex;gap:8px;max-width:400px;margin:0 auto;justify-content:center}
+.sf-consult-form input{background:var(--black);border:1px solid var(--gray-dark);border-radius:4px;padding:10px 14px;font-size:.88rem;color:var(--white);font-family:var(--font-body);outline:none;flex:1;transition:border-color .2s}
+.sf-consult-form input:focus{border-color:var(--red)}
+
+/* ═══════ GALLERY ═══════ */
+#gallery{background:var(--black2)}
+.gallery-masonry{columns:3;column-gap:12px;margin-top:48px}
+.gallery-item{break-inside:avoid;margin-bottom:12px;position:relative;border-radius:6px;overflow:hidden;cursor:pointer}
+.gallery-item img{width:100%;display:block;transition:transform .5s cubic-bezier(.16,1,.3,1)}
+.gallery-item::after{content:'';position:absolute;inset:0;background:rgba(196,30,42,0);transition:background .3s}
+.gallery-item:hover img{transform:scale(1.06)}
+.gallery-item:hover::after{background:rgba(196,30,42,.18)}
+
+/* Lightbox */
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);backdrop-filter:blur(10px);z-index:300;display:none;align-items:center;justify-content:center;padding:24px}
+.lightbox.show{display:flex}
+.lightbox img{max-width:90vw;max-height:85vh;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,.6);animation:modalIn .3s ease}
+.lightbox-close{position:absolute;top:24px;right:32px;background:none;border:none;color:var(--white);font-size:2rem;cursor:pointer;transition:color .2s;z-index:301}
+.lightbox-close:hover{color:var(--red)}
+.lightbox-nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(196,30,42,.2);border:1px solid rgba(196,30,42,.3);color:#fff;width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.2rem;cursor:pointer;transition:all .2s;z-index:301}
+.lightbox-nav:hover{background:var(--red)}
+.lightbox-prev{left:24px}
+.lightbox-next{right:24px}
+
+/* ═══════ BARBERS ═══════ */
+#barbers{background:var(--black)}
+.barbers-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:20px;margin-top:48px}
+.barber-card{text-align:center;padding:32px 20px;background:var(--black2);border:1px solid rgba(255,255,255,.04);border-radius:8px;transition:all .3s}
+.barber-card:hover{border-color:rgba(196,30,42,.2);transform:translateY(-4px)}
+.barber-avatar{width:90px;height:90px;border-radius:50%;background:var(--black3);border:2px solid var(--red);margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.8rem;color:var(--red)}
+.barber-name{font-family:var(--font-condensed);font-size:1rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px}
+.barber-role{font-size:.75rem;color:var(--gray);font-weight:300}
+.barber-specialty{font-size:.7rem;color:var(--red);font-family:var(--font-condensed);letter-spacing:1px;margin-top:8px;text-transform:uppercase}
+
+/* ═══════ LOYALTY ═══════ */
+#loyalty{background:linear-gradient(135deg,var(--black2) 0%,#150a0b 50%,var(--black2) 100%);position:relative;overflow:hidden}
+#loyalty::before{content:'';position:absolute;top:-200px;right:-200px;width:500px;height:500px;background:radial-gradient(circle,rgba(196,30,42,.08) 0%,transparent 70%);pointer-events:none}
+.loyalty-layout{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.loyalty-card{background:linear-gradient(135deg,var(--black3),var(--black4));border:1px solid rgba(196,30,42,.2);border-radius:12px;padding:36px;position:relative;overflow:hidden}
+.loyalty-card::before{content:'MC';position:absolute;top:-20px;right:-10px;font-family:var(--font-display);font-size:8rem;color:rgba(196,30,42,.04);line-height:1;pointer-events:none}
+.loyalty-tier{font-family:var(--font-condensed);font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.loyalty-name{font-family:var(--font-display);font-size:2rem;letter-spacing:1px;margin-bottom:4px}
+.loyalty-points{font-family:var(--font-display);font-size:3rem;color:var(--red);line-height:1}
+.loyalty-points span{font-size:1rem;color:var(--gray);font-family:var(--font-condensed);letter-spacing:2px}
+.loyalty-progress{margin-top:20px}
+.loyalty-progress-label{display:flex;justify-content:space-between;font-size:.72rem;color:var(--gray);font-family:var(--font-condensed);letter-spacing:1px;margin-bottom:6px}
+.loyalty-bar{height:6px;background:var(--black);border-radius:3px;overflow:hidden}
+.loyalty-bar-fill{height:100%;background:linear-gradient(90deg,var(--red),var(--gold));border-radius:3px;transition:width 1s ease}
+.loyalty-perks{margin-top:24px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.perk{display:flex;align-items:center;gap:8px;font-size:.78rem;color:var(--gray-light)}
+.perk .check{color:var(--red);font-weight:700}
+.loyalty-tiers{margin-top:40px}
+.tier{display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.04)}
+.tier:last-child{border-bottom:none}
+.tier-badge{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1rem;flex-shrink:0}
+.tier-bronze .tier-badge{background:rgba(205,127,50,.15);color:#CD7F32;border:1px solid rgba(205,127,50,.3)}
+.tier-silver .tier-badge{background:rgba(192,192,192,.1);color:#C0C0C0;border:1px solid rgba(192,192,192,.2)}
+.tier-gold .tier-badge{background:rgba(212,168,83,.12);color:var(--gold);border:1px solid rgba(212,168,83,.3)}
+.tier-info .tier-name{font-family:var(--font-condensed);font-weight:700;font-size:.85rem;letter-spacing:1px;text-transform:uppercase}
+.tier-info .tier-desc{font-size:.72rem;color:var(--gray);margin-top:2px}
+.loyalty-img{margin-top:24px;border-radius:8px;overflow:hidden;border:1px solid rgba(255,255,255,.05)}
+.loyalty-img img{width:100%;display:block}
+
+/* ═══════ REVIEWS ═══════ */
+#reviews{background:var(--black)}
+.reviews-scroll{display:flex;gap:16px;overflow-x:auto;padding:48px 0 16px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.reviews-scroll::-webkit-scrollbar{display:none}
+.review-card{min-width:320px;max-width:360px;background:var(--black2);border:1px solid rgba(255,255,255,.05);border-radius:8px;padding:24px;scroll-snap-align:start;flex-shrink:0}
+.review-stars{color:var(--gold);font-size:.9rem;letter-spacing:2px;margin-bottom:12px}
+.review-text{font-size:.88rem;color:var(--gray-light);font-weight:300;line-height:1.7;margin-bottom:16px;font-style:italic}
+.review-author{font-family:var(--font-condensed);font-size:.8rem;font-weight:600;letter-spacing:1px;text-transform:uppercase}
+.review-date{font-size:.65rem;color:var(--gray);margin-top:2px}
+.google-rating{display:flex;align-items:center;gap:16px;margin-top:32px;padding:20px 24px;background:var(--black2);border:1px solid rgba(255,255,255,.05);border-radius:8px;max-width:400px}
+.google-rating .big-num{font-family:var(--font-display);font-size:3rem;color:var(--gold);line-height:1}
+.google-rating .g-info{font-size:.8rem;color:var(--gray)}
+.google-rating .g-stars{color:var(--gold);font-size:.85rem;letter-spacing:1px}
+
+/* ═══════ CONTACT ═══════ */
+#contact{background:var(--black);position:relative}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:48px}
+.contact-left-img{width:100%;border-radius:8px;margin-bottom:16px;border:1px solid rgba(255,255,255,.05)}
+.contact-info-card{background:var(--black2);border:1px solid rgba(255,255,255,.05);border-radius:8px;padding:28px;margin-bottom:16px;display:flex;align-items:flex-start;gap:16px;transition:border-color .2s}
+.contact-info-card:hover{border-color:rgba(196,30,42,.2)}
+.contact-icon{width:44px;height:44px;border-radius:50%;background:var(--red-glow);border:1px solid rgba(196,30,42,.2);display:flex;align-items:center;justify-content:center;color:var(--red);font-size:1.1rem;flex-shrink:0}
+.contact-detail h4{font-family:var(--font-condensed);font-size:.85rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.contact-detail p{font-size:.85rem;color:var(--gray-light);font-weight:300}
+.contact-detail a{color:var(--red);transition:color .2s}
+.contact-detail a:hover{color:var(--white)}
+.map-embed{width:100%;height:100%;min-height:350px;border-radius:8px;overflow:hidden;border:1px solid rgba(255,255,255,.05)}
+.map-embed iframe{width:100%;height:100%;border:none;filter:grayscale(1) invert(1) contrast(.8) brightness(.7)}
+
+/* ═══════ FOOTER ═══════ */
+.footer{background:var(--black2);border-top:1px solid rgba(255,255,255,.05);padding:48px 0 24px}
+.footer-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:32px;flex-wrap:wrap;gap:24px}
+.footer-brand .f-name{font-family:var(--font-display);font-size:1.8rem;letter-spacing:2px}
+.footer-brand .f-sub{font-family:var(--font-condensed);font-size:.7rem;letter-spacing:3px;color:var(--gray);text-transform:uppercase}
+.footer-hours h4{font-family:var(--font-condensed);font-size:.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:8px}
+.footer-hours p{font-size:.82rem;color:var(--gray-light);font-weight:300;line-height:1.8}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.04);padding-top:20px;display:flex;justify-content:space-between;align-items:center;font-size:.72rem;color:var(--gray)}
+
+/* ═══════ MODALS ═══════ */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(6px);z-index:200;display:none;align-items:center;justify-content:center;padding:24px}
+.modal-overlay.show{display:flex}
+.modal{background:var(--black3);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:36px;width:100%;max-width:420px;position:relative;animation:modalIn .25s ease}
+@keyframes modalIn{from{opacity:0;transform:translateY(20px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+.modal-close{position:absolute;top:16px;right:16px;background:none;border:none;color:var(--gray);font-size:1.2rem;cursor:pointer;transition:color .2s}
+.modal-close:hover{color:var(--red)}
+.modal h2{font-family:var(--font-display);font-size:2rem;letter-spacing:1px;margin-bottom:4px}
+.modal .modal-sub{font-size:.82rem;color:var(--gray);margin-bottom:24px;font-weight:300}
+.modal .form-group{margin-bottom:14px}
+.modal .btn{width:100%;justify-content:center;margin-top:8px}
+.modal .switch-link{text-align:center;font-size:.8rem;color:var(--gray);margin-top:16px}
+.modal .switch-link a{color:var(--red);cursor:pointer}
+.modal .switch-link a:hover{text-decoration:underline}
+.tab-btns{display:flex;gap:0;margin-bottom:24px;border:1px solid var(--gray-dark);border-radius:4px;overflow:hidden}
+.tab-btn{flex:1;padding:10px;text-align:center;font-family:var(--font-condensed);font-size:.78rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;cursor:pointer;background:transparent;border:none;color:var(--gray);transition:all .2s}
+.tab-btn.active{background:var(--red);color:#fff}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-family:var(--font-condensed);font-size:.72rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--gray);margin-bottom:6px}
+.form-group input,.form-group select{width:100%;background:var(--black);border:1px solid var(--gray-dark);border-radius:4px;padding:12px 14px;font-size:.88rem;color:var(--white);font-family:var(--font-body);outline:none;transition:border-color .2s}
+.form-group input:focus,.form-group select:focus{border-color:var(--red)}
+.form-group input::placeholder{color:var(--gray-dark)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.promo-highlight{background:rgba(196,30,42,.1);border:1px dashed var(--red);border-radius:6px;padding:12px 16px;margin-bottom:16px;text-align:center}
+.promo-highlight .promo-amount{font-family:var(--font-display);font-size:1.8rem;color:var(--gold);line-height:1}
+.promo-highlight p{font-size:.78rem;color:var(--gray-light);margin-top:4px}
+
+/* Coupon display */
+.coupon-display{background:linear-gradient(135deg,rgba(212,168,83,.1),rgba(196,30,42,.1));border:2px dashed var(--gold);border-radius:8px;padding:20px;text-align:center;margin-top:16px}
+.coupon-display .coupon-code{font-family:var(--font-display);font-size:2rem;letter-spacing:4px;color:var(--gold);margin:8px 0}
+.coupon-display .coupon-label{font-family:var(--font-condensed);font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:var(--gray)}
+
+/* ═══════ LOGGED IN BAR ═══════ */
+.member-bar{display:none;background:linear-gradient(90deg,var(--red-dark),var(--red));padding:6px 0;text-align:center;font-family:var(--font-condensed);font-size:.72rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.9)}
+.member-bar.show{display:block}
+.member-bar strong{color:var(--gold)}
+
+/* ═══════ MOBILE MENU ═══════ */
+.mobile-menu{position:fixed;inset:0;background:rgba(10,10,10,.97);z-index:150;display:none;flex-direction:column;align-items:center;justify-content:center;gap:24px}
+.mobile-menu.show{display:flex}
+.mobile-menu a{font-family:var(--font-display);font-size:2.5rem;letter-spacing:3px;color:var(--white);transition:color .2s}
+.mobile-menu a:hover{color:var(--red)}
+.mobile-close{position:absolute;top:20px;right:24px;background:none;border:none;color:var(--white);font-size:2rem;cursor:pointer}
+
+/* ═══════ RESPONSIVE ═══════ */
+@media(max-width:900px){
+  .loyalty-layout,.contact-grid,.booking-layout{grid-template-columns:1fr}
+  .hero-stats{display:none}
+  .nav-links{display:none}
+  .hamburger{display:block}
+  .services-grid{grid-template-columns:1fr 1fr}
+  .services-header{grid-template-columns:1fr}
+  .services-header-img{display:none}
+  .barbers-grid{grid-template-columns:repeat(3,1fr)}
+  .gallery-masonry{columns:2}
+  .booking-image{display:none}
+  .time-grid{grid-template-columns:repeat(3,1fr)}
+  .consult-inner{flex-direction:column;text-align:center}
+  .consult-ctas{align-items:center}
+  .consult-form{flex-direction:column}
+  .consult-form input{width:100%}
+}
+@media(max-width:600px){
+  .services-grid,.barbers-grid{grid-template-columns:1fr}
+  .hero h1{font-size:3rem}
+  .loyalty-perks{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  section{padding:60px 0}
+  .footer-top{flex-direction:column}
+  .gallery-masonry{columns:1}
+  .time-grid{grid-template-columns:repeat(3,1fr)}
+  .booking-steps{flex-wrap:wrap}
+  .booking-step-tab{font-size:.6rem;padding:8px 4px}
+  .date-grid{gap:6px}
+  .date-btn{min-width:60px;padding:8px 10px}
+  .sf-options{grid-template-columns:repeat(2,1fr)}
+  .sf-result-actions{flex-direction:column}
+  .promo-banner-inner{flex-direction:column;gap:8px}
+}
+
+/* ═══════ ANIMATIONS ═══════ */
+.reveal{opacity:0;transform:translateY(30px);transition:all .7s cubic-bezier(.16,1,.3,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.stagger-1{transition-delay:.1s}.stagger-2{transition-delay:.2s}.stagger-3{transition-delay:.3s}.stagger-4{transition-delay:.4s}
+
+/* ═══════ BARBER POLE ACCENT ═══════ */
+.barber-pole-accent{width:4px;height:60px;background:repeating-linear-gradient(45deg,var(--red),var(--red) 8px,#fff 8px,#fff 16px,#1a6fb5 16px,#1a6fb5 24px);border-radius:2px;display:inline-block;margin-right:16px;flex-shrink:0}
+
+/* ═══════ FLOATING CALL BTN ═══════ */
+.float-call{position:fixed;bottom:24px;right:24px;z-index:90;width:56px;height:56px;border-radius:50%;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.3rem;box-shadow:0 4px 20px rgba(196,30,42,.4);cursor:pointer;transition:all .2s;border:none;text-decoration:none}
+.float-call:hover{transform:scale(1.1);box-shadow:0 6px 30px rgba(196,30,42,.5)}
+
+/* Face shape icons */
+.face-icon{position:relative;width:40px;height:48px;margin:0 auto}
+.face-icon svg{width:100%;height:100%}
+</style>
+</head>
+<body>
+
+<!-- MEMBER BAR -->
+<div class="member-bar" id="memberBar">
+  Welcome back, <strong id="memberName">Member</strong> &mdash; You have <strong id="memberPoints">0</strong> loyalty points <span id="memberCoupon"></span>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <img src="assets/images/logo.png" alt="MC Unisex Barbershop">
+      <div>
+        <div class="nav-logo-text">MC Barbershop</div>
+        <div class="nav-logo-sub">Est. 1998 &bull; Central Islip</div>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#booking">Book Now</a></li>
+      <li><a href="#style-finder">Style Finder</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#loyalty">Loyalty</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button class="nav-member" id="loginBtn" onclick="openAuth()">&#9733; Member Login</button></li>
+      <li><a href="tel:6314395963" class="nav-cta">Call Now</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleMobile()">&#9776;</button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="toggleMobile()">&times;</button>
+  <a href="#services" onclick="toggleMobile()">Services</a>
+  <a href="#booking" onclick="toggleMobile()">Book Now</a>
+  <a href="#style-finder" onclick="toggleMobile()">Style Finder</a>
+  <a href="#gallery" onclick="toggleMobile()">Gallery</a>
+  <a href="#loyalty" onclick="toggleMobile()">Loyalty</a>
+  <a href="#reviews" onclick="toggleMobile()">Reviews</a>
+  <a href="#contact" onclick="toggleMobile()">Contact</a>
+  <a href="#" onclick="toggleMobile();openAuth()" style="color:var(--red)">Member Login</a>
+  <a href="tel:6314395963" style="color:var(--gold)">Call (631) 439-5963</a>
+</div>
+
+<!-- HERO — CINEMATIC SCROLL PARALLAX -->
+<section class="hero" id="heroSection">
+  <div class="hero-parallax-wrap">
+    <div class="hero-parallax-bg" id="heroBg"></div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-grain"></div>
+  <div class="hero-particles" id="heroParticles"></div>
+  <div class="hero-content container">
+    <div class="hero-badge"><span class="dot"></span> Walk-Ins Welcome</div>
+    <h1 id="heroTitle"></h1>
+    <p class="hero-sub">28 years of premium grooming in Central Islip. Expert fades, beard sculpting, and classic cuts for the whole family.</p>
+    <div class="hero-actions">
+      <a href="#booking" class="btn btn-red">&#9986; Book Appointment</a>
+      <a href="tel:6314395963" class="btn btn-outline">&#9742; Call to Book</a>
+    </div>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="num" data-target="28" data-suffix="">0</div><div class="label">Years Open</div></div>
+    <div class="hero-stat"><div class="num" data-target="4.4" data-suffix="" data-decimal="true">0</div><div class="label">Google Rating</div></div>
+    <div class="hero-stat"><div class="num" data-target="5" data-suffix="">0</div><div class="label">Expert Barbers</div></div>
+  </div>
+  <div class="scroll-indicator"><span>Scroll</span><div class="line"></div></div>
+</section>
+
+<!-- PROMO BANNER — $15 OFF -->
+<div class="promo-banner" id="promoBanner">
+  <div class="container">
+    <div class="promo-banner-inner">
+      <span class="promo-text">New here? Sign up and get <strong>$15 OFF</strong> your first cut!</span>
+      <button class="btn btn-gold" onclick="openAuth('signup')">Claim $15 Off</button>
+    </div>
+  </div>
+</div>
+
+<div class="red-divider"></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="services-header">
+      <div>
+        <div class="section-label reveal">What We Offer</div>
+        <div class="section-title reveal stagger-1">Services & <span style="color:var(--red)">Pricing</span></div>
+        <div class="section-desc reveal stagger-2">From classic cuts to modern fades, our experienced barbers deliver precision grooming for men, women, and kids.</div>
+      </div>
+      <img src="assets/images/tools-flatlay.png" alt="Barber tools" class="services-header-img reveal stagger-3">
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-card-body">
+          <div class="service-name">Classic Haircut</div>
+          <div class="service-desc">Traditional cut with hot towel finish and styling</div>
+          <div class="service-price">$15 <span class="from">& up</span></div>
+        </div>
+      </div>
+      <div class="service-card reveal stagger-1">
+        <img src="assets/images/service-fade.png" alt="Skin fade haircut" class="service-card-img">
+        <div class="service-card-body">
+          <div class="service-name">Skin Fade</div>
+          <div class="service-desc">Sharp fade with blending and lineup</div>
+          <div class="service-price">$18 <span class="from">& up</span></div>
+        </div>
+      </div>
+      <div class="service-card reveal stagger-2">
+        <img src="assets/images/service-beard.png" alt="Beard trim and shape" class="service-card-img">
+        <div class="service-card-body">
+          <div class="service-name">Beard Trim & Shape</div>
+          <div class="service-desc">Precision beard sculpting with hot towel</div>
+          <div class="service-price">$10 <span class="from">& up</span></div>
+        </div>
+      </div>
+      <div class="service-card reveal stagger-3">
+        <div class="service-card-body">
+          <div class="service-name">Haircut + Beard</div>
+          <div class="service-desc">Full cut and beard trim combo</div>
+          <div class="service-price">$22 <span class="from">& up</span></div>
+        </div>
+      </div>
+      <div class="service-card reveal">
+        <img src="assets/images/service-kids.png" alt="Kids haircut" class="service-card-img">
+        <div class="service-card-body">
+          <div class="service-name">Kids Cut</div>
+          <div class="service-desc">Patient, friendly cuts for children under 12</div>
+          <div class="service-price">$12 <span class="from">& up</span></div>
+        </div>
+      </div>
+      <div class="service-card reveal stagger-1">
+        <div class="service-card-body">
+          <div class="service-name">Women's Cut</div>
+          <div class="service-desc">Trim, style, or reshape for all hair types</div>
+          <div class="service-price">$15 <span class="from">& up</span></div>
+        </div>
+      </div>
+      <div class="service-card reveal stagger-2">
+        <div class="service-card-body">
+          <div class="service-name">Designs & Patterns</div>
+          <div class="service-desc">Custom hair art and detailed razor work</div>
+          <div class="service-price">$5+ <span class="from">add-on</span></div>
+        </div>
+      </div>
+      <div class="service-card reveal stagger-3">
+        <div class="service-card-body">
+          <div class="service-name">Senior Cut</div>
+          <div class="service-desc">Classic gentleman's cut &mdash; 65 and over</div>
+          <div class="service-price">$12 <span class="from">& up</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FREE CONSULTATION BANNER -->
+<div class="consult-banner" id="consultBanner">
+  <div class="container">
+    <div class="consult-inner">
+      <div class="consult-text">
+        <h2>FREE <span>CONSULTATION</span></h2>
+        <p>Not sure what cut is right for you? Walk in for a free consultation with our expert barbers.</p>
+      </div>
+      <div class="consult-ctas">
+        <a href="tel:6314395963" class="phone-big">(631) 439-5963</a>
+        <p style="font-size:.82rem;color:var(--gray-light);font-weight:300;margin-bottom:8px">Or text us for style advice</p>
+        <div class="consult-form">
+          <input type="tel" id="consultPhone" placeholder="Your phone number">
+          <button class="btn btn-red" onclick="submitConsultPhone()">Text Me</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="red-divider"></div>
+
+<!-- BOOKING SYSTEM — 3 Steps (no barber selection) -->
+<section id="booking">
+  <div class="container">
+    <div class="section-label reveal">Schedule Your Visit</div>
+    <div class="section-title reveal stagger-1">Book an <span style="color:var(--red)">Appointment</span></div>
+    <div class="section-desc reveal stagger-2">Choose your service, pick your time, and lock it in. It only takes a minute.</div>
+    <div class="booking-layout">
+      <div class="booking-form reveal stagger-2">
+        <!-- Step tabs -->
+        <div class="booking-steps">
+          <div class="booking-step-tab active" data-step="1"><span class="step-num">1</span> Service</div>
+          <div class="booking-step-tab" data-step="2"><span class="step-num">2</span> Date/Time</div>
+          <div class="booking-step-tab" data-step="3"><span class="step-num">3</span> Confirm</div>
+        </div>
+
+        <!-- Step 1: Choose Service -->
+        <div class="step-panel active" id="bookStep1">
+          <div class="service-select-grid">
+            <div class="service-select-item" data-service="Classic Haircut" data-price="15" onclick="selectService(this)">
+              <span class="svc-name">Classic Haircut</span><span class="svc-price">$15</span>
+            </div>
+            <div class="service-select-item" data-service="Skin Fade" data-price="18" onclick="selectService(this)">
+              <span class="svc-name">Skin Fade</span><span class="svc-price">$18</span>
+            </div>
+            <div class="service-select-item" data-service="Beard Trim" data-price="10" onclick="selectService(this)">
+              <span class="svc-name">Beard Trim</span><span class="svc-price">$10</span>
+            </div>
+            <div class="service-select-item" data-service="Haircut + Beard" data-price="22" onclick="selectService(this)">
+              <span class="svc-name">Haircut + Beard</span><span class="svc-price">$22</span>
+            </div>
+            <div class="service-select-item" data-service="Kids Cut" data-price="12" onclick="selectService(this)">
+              <span class="svc-name">Kids Cut</span><span class="svc-price">$12</span>
+            </div>
+            <div class="service-select-item" data-service="Women's Cut" data-price="15" onclick="selectService(this)">
+              <span class="svc-name">Women's Cut</span><span class="svc-price">$15</span>
+            </div>
+            <div class="service-select-item" data-service="Designs" data-price="5" onclick="selectService(this)">
+              <span class="svc-name">Designs</span><span class="svc-price">$5</span>
+            </div>
+            <div class="service-select-item" data-service="Senior Cut" data-price="12" onclick="selectService(this)">
+              <span class="svc-name">Senior Cut</span><span class="svc-price">$12</span>
+            </div>
+          </div>
+          <div class="booking-nav">
+            <button class="btn btn-red" onclick="nextBookingStep(2)">Next: Pick Time &#8594;</button>
+          </div>
+        </div>
+
+        <!-- Step 2: Date & Time -->
+        <div class="step-panel" id="bookStep2">
+          <div class="time-label">Choose a Date</div>
+          <div class="date-grid" id="dateGrid"></div>
+          <div class="time-label" style="margin-top:16px">Choose a Time</div>
+          <div class="time-grid" id="timeGrid"></div>
+          <div class="booking-nav">
+            <button class="btn btn-outline" onclick="nextBookingStep(1)">&#8592; Back</button>
+            <button class="btn btn-red" onclick="nextBookingStep(3)">Next: Confirm &#8594;</button>
+          </div>
+        </div>
+
+        <!-- Step 3: Confirm -->
+        <div class="step-panel" id="bookStep3">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" id="bookName" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" id="bookPhone" placeholder="(631) 000-0000">
+          </div>
+          <div class="confirm-card" id="confirmCard">
+            <h4>Booking Summary</h4>
+            <div class="confirm-row"><span class="cr-label">Service</span><span class="cr-value" id="confirmService">-</span></div>
+            <div class="confirm-row"><span class="cr-label">Date</span><span class="cr-value" id="confirmDate">-</span></div>
+            <div class="confirm-row"><span class="cr-label">Time</span><span class="cr-value" id="confirmTime">-</span></div>
+            <div class="confirm-row"><span class="cr-label">Price</span><span class="cr-value" id="confirmPrice" style="color:var(--red);font-family:var(--font-display);font-size:1.2rem">-</span></div>
+          </div>
+          <div class="booking-nav">
+            <button class="btn btn-outline" onclick="nextBookingStep(2)">&#8592; Back</button>
+            <button class="btn btn-red" onclick="confirmBooking()">&#10003; Confirm Booking</button>
+          </div>
+        </div>
+
+        <!-- Success screen -->
+        <div class="booking-success" id="bookingSuccess">
+          <div class="check-circle">&#10003;</div>
+          <h3>Booking Confirmed!</h3>
+          <p>We'll see you at the shop. Walk-ins are always welcome too.</p>
+          <button class="btn btn-outline" style="margin-top:20px" onclick="resetBooking()">Book Another</button>
+        </div>
+
+        <!-- My Bookings -->
+        <div class="my-bookings" id="myBookings" style="display:none">
+          <h3>My <span style="color:var(--red)">Bookings</span></h3>
+          <div id="bookingsList"></div>
+        </div>
+      </div>
+      <div class="booking-image reveal stagger-3">
+        <img src="assets/images/booking-preview.png" alt="MC Barbershop interior">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="red-divider"></div>
+
+<!-- AI STYLE FINDER -->
+<section id="style-finder">
+  <div class="container">
+    <div class="section-label reveal" style="text-align:center">AI Style Advisor</div>
+    <div class="section-title reveal stagger-1" style="text-align:center">Find Your Perfect <span style="color:var(--red)">Style</span></div>
+    <div class="section-desc reveal stagger-2" style="text-align:center;margin:0 auto 0">Answer 4 quick questions and we'll recommend the perfect cut for you.</div>
+    <div class="style-finder-wrap reveal stagger-3">
+      <!-- Progress -->
+      <div class="sf-progress" id="sfProgress">
+        <div class="sf-progress-dot active"></div>
+        <div class="sf-progress-dot"></div>
+        <div class="sf-progress-dot"></div>
+        <div class="sf-progress-dot"></div>
+      </div>
+
+      <!-- Q1: Face Shape -->
+      <div class="sf-question active" id="sfQ1">
+        <h3>What's your face shape?</h3>
+        <div class="sf-options">
+          <div class="sf-option" onclick="sfSelect(1,this,'Round')">
+            <div class="sf-option-icon"><svg viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="20" cy="24" rx="16" ry="18" stroke="currentColor" stroke-width="2"/></svg></div>
+            <div class="sf-option-label">Round</div>
+          </div>
+          <div class="sf-option" onclick="sfSelect(1,this,'Oval')">
+            <div class="sf-option-icon"><svg viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="20" cy="24" rx="14" ry="20" stroke="currentColor" stroke-width="2"/></svg></div>
+            <div class="sf-option-label">Oval</div>
+          </div>
+          <div class="sf-option" onclick="sfSelect(1,this,'Square')">
+            <div class="sf-option-icon"><svg viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="4" width="32" height="38" rx="4" stroke="currentColor" stroke-width="2"/></svg></div>
+            <div class="sf-option-label">Square</div>
+          </div>
+          <div class="sf-option" onclick="sfSelect(1,this,'Heart')">
+            <div class="sf-option-icon"><svg viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 6 C12 4 4 10 4 20 C4 32 20 44 20 44 C20 44 36 32 36 20 C36 10 28 4 20 6Z" stroke="currentColor" stroke-width="2"/></svg></div>
+            <div class="sf-option-label">Heart</div>
+          </div>
+          <div class="sf-option" onclick="sfSelect(1,this,'Oblong')">
+            <div class="sf-option-icon"><svg viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="20" cy="24" rx="12" ry="22" stroke="currentColor" stroke-width="2"/></svg></div>
+            <div class="sf-option-label">Oblong</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q2: Maintenance -->
+      <div class="sf-question" id="sfQ2">
+        <h3>How do you style your hair day-to-day?</h3>
+        <div class="sf-options">
+          <div class="sf-option" onclick="sfSelect(2,this,'Low maintenance')">
+            <div class="sf-option-icon">&#9996;</div>
+            <div class="sf-option-label">Low Maintenance</div>
+          </div>
+          <div class="sf-option" onclick="sfSelect(2,this,'Moderate')">
+            <div class="sf-option-icon">&#9997;</div>
+            <div class="sf-option-label">Moderate</div>
+          </div>
+          <div class="sf-option" onclick="sfSelect(2,this,'High maintenance')">
+            <div class="sf-option-icon">&#9733;</div>
+            <div class="sf-option-label">High Maintenance</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q3: Hair Texture -->
+      <div class="sf-question" id="sfQ3">
+        <h3>What's your hair texture?</h3>
+        <div class="sf-options">
+          <div class="sf-option" onclick="sfSelect(3,this,'Straight')">
+            <div class="sf-option-icon">&#8212;</div>
+            <div class="sf-option-label">Straight</div>
+          </div>
+          <div class="sf-option" onclick="sfSelect(3,this,'Wavy')">
+            <div class="sf-option-icon">&#8767;</div>
+            <div class="sf-option-label">Wavy</div>
+          </div>
+          <div class="sf-option" onclick="sfSelect(3,this,'Curly')">
+            <div class="sf-option-icon">&#8734;</div>
+            <div class="sf-option-label">Curly</div>
+          </div>
+          <div class="sf-option" onclick="sfSelect(3,this,'Coily')">
+            <div class="sf-option-icon">&#10047;</div>
+            <div class="sf-option-label">Coily</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Q4: Vibe -->
+      <div class="sf-question" id="sfQ4">
+        <h3>What vibe are you going for?</h3>
+        <div class="sf-options">
+          <div class="sf-option" onclick="sfSelect(4,this,'Classic & Clean')">
+            <div class="sf-option-icon">&#127917;</div>
+            <div class="sf-option-label">Classic & Clean</div>
+          </div>
+          <div class="sf-option" onclick="sfSelect(4,this,'Modern & Sharp')">
+            <div class="sf-option-icon">&#9889;</div>
+            <div class="sf-option-label">Modern & Sharp</div>
+          </div>
+          <div class="sf-option" onclick="sfSelect(4,this,'Bold & Creative')">
+            <div class="sf-option-icon">&#127912;</div>
+            <div class="sf-option-label">Bold & Creative</div>
+          </div>
+          <div class="sf-option" onclick="sfSelect(4,this,'Professional')">
+            <div class="sf-option-icon">&#128188;</div>
+            <div class="sf-option-label">Professional</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Result -->
+      <div class="sf-result" id="sfResult">
+        <div class="sf-result-card">
+          <img id="sfResultImg" src="assets/images/service-fade.png" alt="Recommended style" class="sf-result-img">
+          <div class="sf-result-body">
+            <h3 id="sfResultName">Textured Crop</h3>
+            <p class="sf-why" id="sfResultWhy">This style works great for your face shape and hair type.</p>
+            <div class="sf-price" id="sfResultPrice">$18+</div>
+            <div class="sf-result-actions">
+              <a href="#booking" class="btn btn-red">&#9986; Book This Cut</a>
+              <button class="btn btn-outline" onclick="resetStyleFinder()">&#8634; Try Again</button>
+            </div>
+          </div>
+        </div>
+        <div class="sf-consult">
+          <p>Not sure? Come in for a <strong style="color:var(--red)">free consultation</strong> &mdash; our barbers will help you find the perfect look.</p>
+          <p style="font-size:.82rem;color:var(--gray);margin-bottom:12px">Enter your number and we'll text you style inspiration</p>
+          <div class="sf-consult-form">
+            <input type="tel" id="sfPhone" placeholder="Your phone number">
+            <button class="btn btn-red" onclick="submitStylePhone()">Send Tips</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="red-divider"></div>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="container">
+    <div class="section-label reveal">Our Space</div>
+    <div class="section-title reveal stagger-1">Photo <span style="color:var(--red)">Gallery</span></div>
+    <div class="section-desc reveal stagger-2">Take a look inside MC Unisex Barbershop and see our team in action.</div>
+    <div class="gallery-masonry reveal stagger-3">
+      <div class="gallery-item" onclick="openLightbox(0)">
+        <img src="assets/images/shop-1.jpg" alt="MC Barbershop interior view" loading="lazy">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(1)">
+        <img src="assets/images/shop-2.jpg" alt="MC Barbershop chairs" loading="lazy">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(2)">
+        <img src="assets/images/shop-3.jpg" alt="MC Barbershop view" loading="lazy">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(3)">
+        <img src="assets/images/shop-4.jpg" alt="MC Barbershop detail" loading="lazy">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(4)">
+        <img src="assets/images/shop-5.jpg" alt="MC Barbershop atmosphere" loading="lazy">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(5)">
+        <img src="assets/images/shop-6.jpg" alt="MC Barbershop exterior" loading="lazy">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(6)">
+        <img src="assets/images/barber-action.png" alt="Barber cutting hair" loading="lazy">
+      </div>
+      <div class="gallery-item" onclick="openLightbox(7)">
+        <img src="assets/images/hero-interior.png" alt="MC Barbershop main area" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="red-divider"></div>
+
+<!-- BARBERS -->
+<section id="barbers">
+  <div class="container">
+    <div class="section-label reveal">The Team</div>
+    <div class="section-title reveal stagger-1">Meet Your <span style="color:var(--red)">Barbers</span></div>
+    <div class="section-desc reveal stagger-2">Five skilled barbers with decades of combined experience. Every cut is personal.</div>
+    <div class="barbers-grid">
+      <div class="barber-card reveal">
+        <div class="barber-avatar">M</div>
+        <div class="barber-name">Manny</div>
+        <div class="barber-role">Owner & Master Barber</div>
+        <div class="barber-specialty">Fades &bull; Beards &bull; 28 Years</div>
+      </div>
+      <div class="barber-card reveal stagger-1">
+        <div class="barber-avatar">B</div>
+        <div class="barber-name">Bronis</div>
+        <div class="barber-role">Senior Barber</div>
+        <div class="barber-specialty">Classic Cuts &bull; 20+ Years</div>
+      </div>
+      <div class="barber-card reveal stagger-2">
+        <div class="barber-avatar">R</div>
+        <div class="barber-name">Ricardo</div>
+        <div class="barber-role">Barber</div>
+        <div class="barber-specialty">Kids & Adults &bull; Fades</div>
+      </div>
+      <div class="barber-card reveal stagger-3">
+        <div class="barber-avatar">C</div>
+        <div class="barber-name">Chi Chi</div>
+        <div class="barber-role">Barber</div>
+        <div class="barber-specialty">All Styles &bull; Veteran</div>
+      </div>
+      <div class="barber-card reveal stagger-4">
+        <div class="barber-avatar">R</div>
+        <div class="barber-name">Richard</div>
+        <div class="barber-role">Barber</div>
+        <div class="barber-specialty">Modern Cuts &bull; Designs</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="red-divider"></div>
+
+<!-- LOYALTY PROGRAM -->
+<section id="loyalty">
+  <div class="container">
+    <div class="loyalty-layout">
+      <div>
+        <div class="section-label reveal">Rewards</div>
+        <div class="section-title reveal stagger-1">MC Loyalty <span style="color:var(--red)">Program</span></div>
+        <div class="section-desc reveal stagger-2">Every visit earns you points. Redeem for free cuts, upgrades, and exclusive perks. Sign up and get <strong style="color:var(--gold)">$15 OFF</strong> your first haircut!</div>
+        <div class="loyalty-tiers reveal stagger-3">
+          <div class="tier tier-bronze">
+            <div class="tier-badge">B</div>
+            <div class="tier-info"><div class="tier-name">Bronze</div><div class="tier-desc">0-99 pts &mdash; Earn 10 pts per visit</div></div>
+          </div>
+          <div class="tier tier-silver">
+            <div class="tier-badge">S</div>
+            <div class="tier-info"><div class="tier-name">Silver</div><div class="tier-desc">100-249 pts &mdash; 15 pts/visit + free beard trim at 150</div></div>
+          </div>
+          <div class="tier tier-gold">
+            <div class="tier-badge">G</div>
+            <div class="tier-info"><div class="tier-name">Gold</div><div class="tier-desc">250+ pts &mdash; 20 pts/visit + free haircut at 250</div></div>
+          </div>
+        </div>
+        <button class="btn btn-red reveal stagger-4" style="margin-top:28px" onclick="openAuth('signup')">&#9733; Join Now &mdash; Get $15 Off</button>
+        <div class="loyalty-img reveal stagger-4" style="margin-top:24px">
+          <img src="assets/images/products-shelf.png" alt="MC Barbershop products">
+        </div>
+      </div>
+      <div class="reveal stagger-2">
+        <div class="loyalty-card" id="loyaltyCard">
+          <div class="loyalty-tier" id="loyaltyTier">Bronze Member</div>
+          <div class="loyalty-name" id="loyaltyCardName">Sign Up to Start</div>
+          <div class="loyalty-points"><span id="loyaltyPts">0</span> <span>PTS</span></div>
+          <div class="loyalty-progress">
+            <div class="loyalty-progress-label"><span>Current</span><span id="nextTierLabel">Next: Silver (100 pts)</span></div>
+            <div class="loyalty-bar"><div class="loyalty-bar-fill" id="loyaltyBarFill" style="width:0%"></div></div>
+          </div>
+          <div class="loyalty-perks">
+            <div class="perk"><span class="check">&#10003;</span> Earn points every visit</div>
+            <div class="perk"><span class="check">&#10003;</span> Birthday free cut</div>
+            <div class="perk"><span class="check">&#10003;</span> $15 off first visit</div>
+            <div class="perk"><span class="check">&#10003;</span> Exclusive member pricing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="container">
+    <div class="section-label reveal">What They Say</div>
+    <div class="section-title reveal stagger-1">Customer <span style="color:var(--red)">Reviews</span></div>
+    <div class="reviews-scroll">
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="review-text">"Best barbershop ever. The owner Manny is an incredible barber, he is also great with beards."</div>
+        <div class="review-author">Paul Hart</div>
+        <div class="review-date">Google Review</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="review-text">"Bronis is an excellent Barber, he has been my barber for over 20 years."</div>
+        <div class="review-author">Pablo A Lopez</div>
+        <div class="review-date">Google Review</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="review-text">"Ricardo is amazing with kids and adults. Great prices too!"</div>
+        <div class="review-author">Adam Holland</div>
+        <div class="review-date">Google Review</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="review-text">"Over 20 years — Chi Chi was my first barber and Manuel, Bronnis, Richard. Amazing team."</div>
+        <div class="review-author">Kerin Martinez</div>
+        <div class="review-date">Google Review</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="review-text">"Awesome barbers especially Manny!"</div>
+        <div class="review-author">Slavko Gerin</div>
+        <div class="review-date">Google Review</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="review-text">"Best barbers in town."</div>
+        <div class="review-author">Anthony Burrell</div>
+        <div class="review-date">Google Review</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div class="review-text">"Good place, spacious and clean, the staff is OK."</div>
+        <div class="review-author">Rafael Godoy</div>
+        <div class="review-date">Google Review</div>
+      </div>
+    </div>
+    <div class="google-rating reveal">
+      <div class="big-num">4.4</div>
+      <div>
+        <div class="g-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+        <div class="g-info">Based on 24 Google reviews</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="red-divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-label reveal">Visit Us</div>
+    <div class="section-title reveal stagger-1">Location & <span style="color:var(--red)">Hours</span></div>
+    <div class="contact-grid">
+      <div>
+        <img src="assets/images/hero-interior.png" alt="Inside MC Barbershop" class="contact-left-img reveal">
+        <div class="contact-info-card reveal stagger-1">
+          <div class="contact-icon">&#128205;</div>
+          <div class="contact-detail">
+            <h4>Address</h4>
+            <p>1641 Islip Ave<br>Central Islip, NY 11722</p>
+          </div>
+        </div>
+        <div class="contact-info-card reveal stagger-2">
+          <div class="contact-icon">&#9742;</div>
+          <div class="contact-detail">
+            <h4>Phone</h4>
+            <p><a href="tel:6314395963">(631) 439-5963</a></p>
+          </div>
+        </div>
+        <div class="contact-info-card reveal stagger-3">
+          <div class="contact-icon">&#128337;</div>
+          <div class="contact-detail">
+            <h4>Hours</h4>
+            <p>Monday &ndash; Saturday: 9:00 AM &ndash; 7:00 PM<br>Sunday: 9:00 AM &ndash; 5:00 PM</p>
+          </div>
+        </div>
+        <div class="contact-info-card reveal stagger-4">
+          <div class="contact-icon">&#9733;</div>
+          <div class="contact-detail">
+            <h4>Walk-Ins Welcome</h4>
+            <p>No appointment needed. First come, first served.</p>
+          </div>
+        </div>
+      </div>
+      <div class="map-embed reveal stagger-2">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.5!2d-73.1987!3d40.7906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e8345e5c0c0001%3A0x1!2s1641+Islip+Ave%2C+Central+Islip%2C+NY+11722!5e0!3m2!1sen!2sus!4v1" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="f-name">MC Unisex Barbershop</div>
+        <div class="f-sub">Central Islip, NY &bull; Since 1998</div>
+      </div>
+      <div class="footer-hours">
+        <h4>Hours</h4>
+        <p>Mon&ndash;Sat: 9AM&ndash;7PM<br>Sun: 9AM&ndash;5PM</p>
+      </div>
+      <div class="footer-hours">
+        <h4>Contact</h4>
+        <p>(631) 439-5963<br>1641 Islip Ave, Central Islip, NY 11722</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 MC Unisex Barbershop. All rights reserved.</span>
+      <span>Est. 1998 &bull; 28 Years of Excellence</span>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING CALL -->
+<a href="tel:6314395963" class="float-call" title="Call MC Barbershop">&#9742;</a>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+  <button class="lightbox-nav lightbox-prev" onclick="navLightbox(-1)">&#8249;</button>
+  <img id="lightboxImg" src="" alt="Gallery photo">
+  <button class="lightbox-nav lightbox-next" onclick="navLightbox(1)">&#8250;</button>
+</div>
+
+<!-- AUTH MODAL -->
+<div class="modal-overlay" id="authModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeAuth()">&times;</button>
+    <h2 id="authTitle">Member Login</h2>
+    <p class="modal-sub" id="authSub">Sign in to track your loyalty points</p>
+    <div class="tab-btns">
+      <button class="tab-btn active" id="tabLogin" onclick="switchTab('login')">Login</button>
+      <button class="tab-btn" id="tabSignup" onclick="switchTab('signup')">Sign Up</button>
+    </div>
+    <div id="loginForm">
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" id="authPhone" placeholder="(631) 000-0000">
+      </div>
+      <div class="form-group">
+        <label>PIN</label>
+        <input type="password" id="authPin" placeholder="4-digit PIN" maxlength="4">
+      </div>
+      <button class="btn btn-red" onclick="login()">Sign In</button>
+    </div>
+    <div id="signupForm" style="display:none">
+      <div class="promo-highlight">
+        <div class="promo-amount">$15 OFF</div>
+        <p>Your first haircut when you sign up today!</p>
+      </div>
+      <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" id="signupName" placeholder="Your name">
+      </div>
+      <div class="form-group">
+        <label>Phone Number *</label>
+        <input type="tel" id="signupPhone" placeholder="(631) 000-0000">
+      </div>
+      <div class="form-group">
+        <label>Create PIN</label>
+        <input type="password" id="signupPin" placeholder="4-digit PIN" maxlength="4">
+      </div>
+      <button class="btn btn-gold" onclick="signup()">&#9733; Sign Up & Get $15 Off</button>
+    </div>
+    <!-- Coupon display after signup -->
+    <div id="couponReveal" style="display:none">
+      <div class="coupon-display">
+        <div class="coupon-label">Your $15 Off Coupon Code</div>
+        <div class="coupon-code" id="couponCode"></div>
+        <div class="coupon-label">Show this code at checkout</div>
+      </div>
+      <button class="btn btn-red" style="margin-top:16px" onclick="closeAuth()">Start Booking</button>
+    </div>
+    <div id="authMsg" style="margin-top:12px;font-size:.82rem;text-align:center;color:var(--red);display:none"></div>
+  </div>
+</div>
+
+<!-- SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarberShop",
+  "name": "MC Unisex Barbershop",
+  "image": "assets/images/hero-cinematic.png",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1641 Islip Ave",
+    "addressLocality": "Central Islip",
+    "addressRegion": "NY",
+    "postalCode": "11722",
+    "addressCountry": "US"
+  },
+  "telephone": "+16314395963",
+  "url": "https://mcunisexbarbershop.com",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.4",
+    "reviewCount": "24"
+  },
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "19:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:00", "closes": "17:00"}
+  ],
+  "priceRange": "$10-$25",
+  "foundingDate": "1998",
+  "description": "MC Unisex Barbershop — 28 years of premium cuts in Central Islip, NY. Expert fades, beard sculpting, classic cuts for the whole family.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Barbershop Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Classic Haircut"}, "price": "15.00", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Skin Fade"}, "price": "18.00", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Beard Trim"}, "price": "10.00", "priceCurrency": "USD"},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Kids Cut"}, "price": "12.00", "priceCurrency": "USD"}
+    ]
+  }
+}
+</script>
+
+<script>
+// ═══════ CINEMATIC HERO TITLE ═══════
+(function(){
+  const title = document.getElementById('heroTitle');
+  const lines = [
+    {text: 'YOUR CUT.', cls: ''},
+    {text: 'YOUR STYLE.', cls: 'red'}
+  ];
+  let html = '';
+  let delay = 0;
+  lines.forEach((line, li) => {
+    if (li > 0) html += '<br>';
+    const wrap = line.cls ? '<span class="' + line.cls + '">' : '';
+    const wrapEnd = line.cls ? '</span>' : '';
+    html += wrap;
+    for (let i = 0; i < line.text.length; i++) {
+      const ch = line.text[i] === ' ' ? '&nbsp;' : line.text[i];
+      html += '<span class="hero-letter" style="animation-delay:' + delay + 'ms">' + ch + '</span>';
+      delay += 45;
+    }
+    html += wrapEnd;
+  });
+  title.innerHTML = html;
+})();
+
+// ═══════ HERO PARTICLES ═══════
+(function(){
+  const container = document.getElementById('heroParticles');
+  for (let i = 0; i < 25; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    p.style.left = Math.random() * 100 + '%';
+    p.style.bottom = '-10px';
+    p.style.width = (2 + Math.random() * 4) + 'px';
+    p.style.height = p.style.width;
+    p.style.animationDuration = (4 + Math.random() * 6) + 's';
+    p.style.animationDelay = (Math.random() * 8) + 's';
+    container.appendChild(p);
+  }
+})();
+
+// ═══════ HERO PARALLAX + ZOOM ON SCROLL ═══════
+(function(){
+  const heroBg = document.getElementById('heroBg');
+  const heroSection = document.getElementById('heroSection');
+  let ticking = false;
+  function onScroll() {
+    if (!ticking) {
+      requestAnimationFrame(function() {
+        const scrollY = window.scrollY;
+        const heroH = heroSection.offsetHeight;
+        if (scrollY < heroH + 200) {
+          // Parallax: move background at 30% scroll speed
+          const translateY = scrollY * 0.3;
+          // Zoom: scale from 1.0 to 1.15 over first 500px
+          const zoomProgress = Math.min(scrollY / 500, 1);
+          const scale = 1 + (0.15 * zoomProgress);
+          heroBg.style.transform = 'translateY(' + translateY + 'px) scale(' + scale + ')';
+        }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }
+  window.addEventListener('scroll', onScroll, {passive: true});
+})();
+
+// ═══════ STAT COUNT-UP ON SCROLL ═══════
+const statObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      const nums = entry.target.querySelectorAll('.num[data-target]');
+      nums.forEach(function(num) {
+        const target = parseFloat(num.dataset.target);
+        const isDecimal = num.dataset.decimal === 'true';
+        const suffix = num.dataset.suffix || '';
+        const duration = 1500;
+        const startTime = performance.now();
+        function animate(currentTime) {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const current = eased * target;
+          num.textContent = (isDecimal ? current.toFixed(1) : Math.round(current)) + suffix;
+          if (progress < 1) requestAnimationFrame(animate);
+        }
+        requestAnimationFrame(animate);
+      });
+      statObserver.unobserve(entry.target);
+    }
+  });
+}, {threshold: 0.5});
+document.querySelectorAll('.hero-stats').forEach(function(el) { statObserver.observe(el); });
+
+// ═══════ NAVBAR SCROLL ═══════
+window.addEventListener('scroll', function() {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// ═══════ SCROLL REVEAL ═══════
+const revealObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(function(e) {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      revealObserver.unobserve(e.target);
+    }
+  });
+}, {threshold: .15});
+document.querySelectorAll('.reveal').forEach(function(el) { revealObserver.observe(el); });
+
+// ═══════ MOBILE MENU ═══════
+function toggleMobile() { document.getElementById('mobileMenu').classList.toggle('show'); }
+
+// ═══════ LEAD COLLECTION ═══════
+function saveLead(name, phone, source) {
+  if (!phone) return;
+  var leads = JSON.parse(localStorage.getItem('mc_leads') || '[]');
+  leads.push({name: name || '', phone: phone, source: source, timestamp: new Date().toISOString()});
+  localStorage.setItem('mc_leads', JSON.stringify(leads));
+}
+
+// ═══════ AUTH MODAL ═══════
+function openAuth(tab) {
+  document.getElementById('authModal').classList.add('show');
+  if (tab === 'signup') switchTab('signup');
+}
+function closeAuth() { document.getElementById('authModal').classList.remove('show'); }
+function switchTab(tab) {
+  document.getElementById('tabLogin').classList.toggle('active', tab === 'login');
+  document.getElementById('tabSignup').classList.toggle('active', tab === 'signup');
+  document.getElementById('loginForm').style.display = tab === 'login' ? 'block' : 'none';
+  document.getElementById('signupForm').style.display = tab === 'signup' ? 'block' : 'none';
+  document.getElementById('couponReveal').style.display = 'none';
+  document.getElementById('authTitle').textContent = tab === 'login' ? 'Member Login' : 'Create Account';
+  document.getElementById('authSub').textContent = tab === 'login' ? 'Sign in to track your loyalty points' : 'Sign up and get $15 OFF your first haircut!';
+  document.getElementById('authMsg').style.display = 'none';
+}
+function showMsg(msg, success) {
+  var el = document.getElementById('authMsg');
+  el.textContent = msg;
+  el.style.display = 'block';
+  el.style.color = success ? '#4ade80' : 'var(--red)';
+}
+
+// ═══════ COUPON GENERATOR ═══════
+function generateCoupon() {
+  var chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+  var code = 'MC';
+  for (var i = 0; i < 4; i++) code += chars.charAt(Math.floor(Math.random() * chars.length));
+  return code;
+}
+
+// ═══════ MEMBER SYSTEM (localStorage) ═══════
+function getMembers() { return JSON.parse(localStorage.getItem('mc_members') || '[]'); }
+function saveMembers(m) { localStorage.setItem('mc_members', JSON.stringify(m)); }
+function getCurrentUser() { return JSON.parse(localStorage.getItem('mc_current') || 'null'); }
+function setCurrentUser(u) { localStorage.setItem('mc_current', JSON.stringify(u)); }
+
+function signup() {
+  var name = document.getElementById('signupName').value.trim();
+  var phone = document.getElementById('signupPhone').value.trim();
+  var pin = document.getElementById('signupPin').value.trim();
+  if (!name || !phone || pin.length !== 4) { showMsg('Please fill all fields. Phone is required. PIN must be 4 digits.'); return; }
+  var members = getMembers();
+  if (members.find(function(m) { return m.phone === phone; })) { showMsg('This phone is already registered. Try logging in.'); return; }
+  var coupon = generateCoupon();
+  var user = {name: name, phone: phone, pin: pin, points: 10, visits: 1, tier: 'Bronze', joined: new Date().toISOString(), coupon: coupon, couponUsed: false};
+  members.push(user);
+  saveMembers(members);
+  setCurrentUser(user);
+  // Save lead
+  saveLead(name, phone, 'signup');
+  // Show coupon
+  document.getElementById('signupForm').style.display = 'none';
+  document.getElementById('loginForm').style.display = 'none';
+  document.getElementById('couponReveal').style.display = 'block';
+  document.getElementById('couponCode').textContent = coupon;
+  document.getElementById('authTitle').textContent = 'Welcome!';
+  document.getElementById('authSub').textContent = 'You earned 10 points + your $15 OFF coupon:';
+  document.querySelector('.tab-btns').style.display = 'none';
+  updateUI();
+}
+
+function login() {
+  var phone = document.getElementById('authPhone').value.trim();
+  var pin = document.getElementById('authPin').value.trim();
+  if (!phone || !pin) { showMsg('Enter phone and PIN'); return; }
+  var members = getMembers();
+  var user = members.find(function(m) { return m.phone === phone && m.pin === pin; });
+  if (!user) { showMsg('Invalid phone or PIN'); return; }
+  setCurrentUser(user);
+  showMsg('Welcome back, ' + user.name + '!', true);
+  setTimeout(function() { closeAuth(); updateUI(); }, 1000);
+}
+
+function logout() {
+  localStorage.removeItem('mc_current');
+  updateUI();
+}
+
+function getTier(pts) {
+  if (pts >= 250) return 'Gold';
+  if (pts >= 100) return 'Silver';
+  return 'Bronze';
+}
+
+function updateUI() {
+  var user = getCurrentUser();
+  var bar = document.getElementById('memberBar');
+  var loginBtn = document.getElementById('loginBtn');
+  var promoBanner = document.getElementById('promoBanner');
+  if (user) {
+    bar.classList.add('show');
+    document.getElementById('memberName').textContent = user.name;
+    document.getElementById('memberPoints').textContent = user.points;
+    // Show coupon in member bar if they have one
+    var couponEl = document.getElementById('memberCoupon');
+    if (user.coupon && !user.couponUsed) {
+      couponEl.innerHTML = ' | Coupon: <strong>' + user.coupon + '</strong> ($15 off)';
+    } else {
+      couponEl.innerHTML = '';
+    }
+    loginBtn.innerHTML = '&#9733; ' + user.name.split(' ')[0];
+    loginBtn.onclick = function() { if (confirm('Sign out?')) logout(); };
+    document.getElementById('loyaltyTier').textContent = getTier(user.points) + ' Member';
+    document.getElementById('loyaltyCardName').textContent = user.name;
+    document.getElementById('loyaltyPts').textContent = user.points;
+    var tier = getTier(user.points);
+    var pct, nextLabel;
+    if (tier === 'Bronze') { pct = (user.points / 100) * 100; nextLabel = 'Next: Silver (100 pts)'; }
+    else if (tier === 'Silver') { pct = ((user.points - 100) / 150) * 100; nextLabel = 'Next: Gold (250 pts)'; }
+    else { pct = 100; nextLabel = 'Max Tier Reached!'; }
+    document.getElementById('loyaltyBarFill').style.width = Math.min(pct, 100) + '%';
+    document.getElementById('nextTierLabel').textContent = nextLabel;
+    // Pre-fill booking form
+    document.getElementById('bookName').value = user.name;
+    document.getElementById('bookPhone').value = user.phone;
+    // Hide promo banner for members
+    promoBanner.style.display = 'none';
+  } else {
+    bar.classList.remove('show');
+    loginBtn.innerHTML = '&#9733; Member Login';
+    loginBtn.onclick = openAuth;
+    document.getElementById('loyaltyTier').textContent = 'Bronze Member';
+    document.getElementById('loyaltyCardName').textContent = 'Sign Up to Start';
+    document.getElementById('loyaltyPts').textContent = '0';
+    document.getElementById('loyaltyBarFill').style.width = '0%';
+    document.getElementById('nextTierLabel').textContent = 'Next: Silver (100 pts)';
+    promoBanner.style.display = '';
+  }
+  renderMyBookings();
+  // Reset modal state
+  document.querySelector('.tab-btns').style.display = '';
+}
+
+// ═══════ BOOKING SYSTEM ═══════
+var bookingData = {service: '', price: 0, date: '', time: '', name: '', phone: ''};
+
+function selectService(el) {
+  document.querySelectorAll('.service-select-item').forEach(function(c) { c.classList.remove('selected'); });
+  el.classList.add('selected');
+  bookingData.service = el.dataset.service;
+  bookingData.price = parseInt(el.dataset.price);
+}
+
+function nextBookingStep(step) {
+  if (step === 2 && !bookingData.service) { alert('Please select a service'); return; }
+  if (step === 3) {
+    if (!bookingData.date || !bookingData.time) { alert('Please select a date and time'); return; }
+    document.getElementById('confirmService').textContent = bookingData.service;
+    document.getElementById('confirmDate').textContent = bookingData.date;
+    document.getElementById('confirmTime').textContent = bookingData.time;
+    document.getElementById('confirmPrice').textContent = '$' + bookingData.price;
+    var user = getCurrentUser();
+    if (user) {
+      document.getElementById('bookName').value = user.name;
+      document.getElementById('bookPhone').value = user.phone;
+    }
+  }
+  document.querySelectorAll('.booking-step-tab').forEach(function(tab) {
+    var s = parseInt(tab.dataset.step);
+    tab.classList.remove('active', 'done');
+    if (s === step) tab.classList.add('active');
+    else if (s < step) tab.classList.add('done');
+  });
+  document.querySelectorAll('.step-panel').forEach(function(p) { p.classList.remove('active'); });
+  var panel = document.getElementById('bookStep' + step);
+  if (panel) panel.classList.add('active');
+}
+
+function confirmBooking() {
+  var name = document.getElementById('bookName').value.trim();
+  var phone = document.getElementById('bookPhone').value.trim();
+  if (!name || !phone) { alert('Please enter your name and phone number'); return; }
+  bookingData.name = name;
+  bookingData.phone = phone;
+  var bookings = JSON.parse(localStorage.getItem('mc_bookings') || '[]');
+  var booking = {
+    service: bookingData.service,
+    price: bookingData.price,
+    date: bookingData.date,
+    time: bookingData.time,
+    name: bookingData.name,
+    phone: bookingData.phone,
+    id: Date.now(),
+    created: new Date().toISOString()
+  };
+  bookings.push(booking);
+  localStorage.setItem('mc_bookings', JSON.stringify(bookings));
+  document.querySelectorAll('.step-panel').forEach(function(p) { p.classList.remove('active'); });
+  document.querySelectorAll('.booking-step-tab').forEach(function(t) { t.classList.remove('active'); t.classList.add('done'); });
+  document.getElementById('bookingSuccess').classList.add('show');
+  renderMyBookings();
+}
+
+function resetBooking() {
+  bookingData = {service: '', price: 0, date: '', time: '', name: '', phone: ''};
+  document.querySelectorAll('.service-select-item').forEach(function(c) { c.classList.remove('selected'); });
+  document.querySelectorAll('.date-btn').forEach(function(c) { c.classList.remove('selected'); });
+  document.querySelectorAll('.time-btn').forEach(function(c) { c.classList.remove('selected'); });
+  document.getElementById('bookingSuccess').classList.remove('show');
+  document.querySelectorAll('.booking-step-tab').forEach(function(t) { t.classList.remove('active', 'done'); });
+  document.querySelector('.booking-step-tab[data-step="1"]').classList.add('active');
+  document.getElementById('bookStep1').classList.add('active');
+}
+
+function renderMyBookings() {
+  var bookings = JSON.parse(localStorage.getItem('mc_bookings') || '[]');
+  var container = document.getElementById('myBookings');
+  var list = document.getElementById('bookingsList');
+  if (!bookings.length) { container.style.display = 'none'; return; }
+  container.style.display = 'block';
+  list.innerHTML = bookings.map(function(b, i) {
+    return '<div class="booking-item"><div class="bi-info"><span class="bi-service">' + b.service + '</span><span class="bi-detail">' + b.date + ' at ' + b.time + '</span></div><span class="bi-price">$' + b.price + '</span><button class="bi-cancel" onclick="cancelBooking(' + i + ')">Cancel</button></div>';
+  }).join('');
+}
+
+function cancelBooking(idx) {
+  if (!confirm('Cancel this booking?')) return;
+  var bookings = JSON.parse(localStorage.getItem('mc_bookings') || '[]');
+  bookings.splice(idx, 1);
+  localStorage.setItem('mc_bookings', JSON.stringify(bookings));
+  renderMyBookings();
+}
+
+// Generate date buttons (next 7 days)
+(function() {
+  var grid = document.getElementById('dateGrid');
+  var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  for (var i = 0; i < 7; i++) {
+    var d = new Date();
+    d.setDate(d.getDate() + i);
+    var btn = document.createElement('div');
+    btn.className = 'date-btn';
+    btn.innerHTML = '<div class="d-day">' + days[d.getDay()] + '</div><div class="d-num">' + d.getDate() + '</div><div class="d-month">' + months[d.getMonth()] + '</div>';
+    var dateStr = d.toLocaleDateString('en-US', {weekday: 'short', month: 'short', day: 'numeric'});
+    (function(ds) {
+      btn.onclick = function() {
+        document.querySelectorAll('.date-btn').forEach(function(b) { b.classList.remove('selected'); });
+        this.classList.add('selected');
+        bookingData.date = ds;
+      };
+    })(dateStr);
+    grid.appendChild(btn);
+  }
+})();
+
+// Generate time slots (9AM-6PM, 30min)
+(function() {
+  var grid = document.getElementById('timeGrid');
+  for (var h = 9; h <= 17; h++) {
+    for (var m = 0; m < 60; m += 30) {
+      if (h === 17 && m === 30) continue;
+      var hour12 = h > 12 ? h - 12 : h;
+      var ampm = h >= 12 ? 'PM' : 'AM';
+      var minStr = m === 0 ? '00' : '30';
+      var timeStr = hour12 + ':' + minStr + ' ' + ampm;
+      var btn = document.createElement('div');
+      btn.className = 'time-btn';
+      btn.textContent = timeStr;
+      (function(ts) {
+        btn.onclick = function() {
+          document.querySelectorAll('.time-btn').forEach(function(b) { b.classList.remove('selected'); });
+          this.classList.add('selected');
+          bookingData.time = ts;
+        };
+      })(timeStr);
+      grid.appendChild(btn);
+    }
+  }
+})();
+
+// ═══════ AI STYLE FINDER ═══════
+var sfAnswers = {};
+
+function sfSelect(q, el, answer) {
+  // Mark selected
+  el.parentElement.querySelectorAll('.sf-option').forEach(function(o) { o.classList.remove('selected'); });
+  el.classList.add('selected');
+  sfAnswers['q' + q] = answer;
+
+  // Auto advance after a short delay
+  setTimeout(function() {
+    if (q < 4) {
+      document.getElementById('sfQ' + q).classList.remove('active');
+      document.getElementById('sfQ' + (q + 1)).classList.add('active');
+      // Update progress
+      var dots = document.querySelectorAll('.sf-progress-dot');
+      dots[q - 1].classList.remove('active');
+      dots[q - 1].classList.add('done');
+      dots[q].classList.add('active');
+    } else {
+      // Show result
+      document.getElementById('sfQ4').classList.remove('active');
+      var dots = document.querySelectorAll('.sf-progress-dot');
+      dots[3].classList.remove('active');
+      dots[3].classList.add('done');
+      showStyleResult();
+    }
+  }, 400);
+}
+
+function showStyleResult() {
+  var face = sfAnswers.q1 || 'Oval';
+  var maint = sfAnswers.q2 || 'Moderate';
+  var texture = sfAnswers.q3 || 'Straight';
+  var vibe = sfAnswers.q4 || 'Modern & Sharp';
+
+  // Recommendation logic
+  var cuts = {
+    'Round+Low maintenance+Straight+Classic & Clean': {name: 'Classic Taper', why: 'A clean taper adds length on top, balancing a round face shape. Low maintenance and always sharp.', price: '$15+', img: 'assets/images/service-fade.png'},
+    'Round+Low maintenance+Straight+Modern & Sharp': {name: 'Textured Crop', why: 'A textured crop with short sides adds angular definition to a round face. Easy to style with minimal effort.', price: '$18+', img: 'assets/images/service-fade.png'},
+    'Oval+Moderate+Wavy+Modern & Sharp': {name: 'Mid Skin Fade', why: 'Oval faces suit almost any style. A mid fade with wavy texture on top gives you a modern, sharp look.', price: '$18+', img: 'assets/images/service-fade.png'},
+    'Square+High maintenance+Curly+Bold & Creative': {name: 'Curly High Top', why: 'Your square jawline and curly texture are perfect for a bold high top fade with defined curls.', price: '$20+', img: 'assets/images/service-fade.png'},
+  };
+
+  // Default recommendation based on key traits
+  var rec = {name: 'Skin Fade', why: '', price: '$18+', img: 'assets/images/service-fade.png'};
+  var key = face + '+' + maint + '+' + texture + '+' + vibe;
+  if (cuts[key]) {
+    rec = cuts[key];
+  } else {
+    // Smart fallback based on vibe and face
+    if (vibe === 'Classic & Clean') {
+      rec.name = 'Classic Taper';
+      rec.price = '$15+';
+      rec.img = 'assets/images/service-beard.png';
+    } else if (vibe === 'Bold & Creative') {
+      rec.name = 'Design Fade';
+      rec.price = '$23+';
+      rec.img = 'assets/images/service-fade.png';
+    } else if (vibe === 'Professional') {
+      rec.name = 'Executive Cut';
+      rec.price = '$15+';
+      rec.img = 'assets/images/service-beard.png';
+    } else {
+      rec.name = 'Textured Crop';
+      rec.price = '$18+';
+      rec.img = 'assets/images/service-fade.png';
+    }
+
+    // Build explanation
+    var faceNote = '';
+    if (face === 'Round') faceNote = 'For a round face, height on top creates a slimming effect.';
+    else if (face === 'Oval') faceNote = 'With an oval face, you have the versatility to pull off almost any style.';
+    else if (face === 'Square') faceNote = 'Your strong jawline pairs perfectly with shorter sides that highlight your angular features.';
+    else if (face === 'Heart') faceNote = 'A heart-shaped face looks great with volume on top and tapered sides.';
+    else if (face === 'Oblong') faceNote = 'For an oblong face, keeping some width on the sides helps balance your proportions.';
+
+    var textureNote = '';
+    if (texture === 'Straight') textureNote = ' Your straight hair makes clean lines and precise fades look extra sharp.';
+    else if (texture === 'Wavy') textureNote = ' Your wavy texture adds natural movement and volume to the cut.';
+    else if (texture === 'Curly') textureNote = ' Your curly hair brings amazing texture and body to this style.';
+    else if (texture === 'Coily') textureNote = ' Your coily texture gives incredible definition and shape.';
+
+    rec.why = faceNote + textureNote;
+  }
+
+  document.getElementById('sfResultName').textContent = rec.name;
+  document.getElementById('sfResultWhy').textContent = rec.why;
+  document.getElementById('sfResultPrice').textContent = rec.price;
+  document.getElementById('sfResultImg').src = rec.img;
+  document.getElementById('sfResult').classList.add('active');
+}
+
+function resetStyleFinder() {
+  sfAnswers = {};
+  document.getElementById('sfResult').classList.remove('active');
+  for (var i = 1; i <= 4; i++) {
+    document.getElementById('sfQ' + i).classList.remove('active');
+    document.getElementById('sfQ' + i).querySelectorAll('.sf-option').forEach(function(o) { o.classList.remove('selected'); });
+  }
+  document.getElementById('sfQ1').classList.add('active');
+  var dots = document.querySelectorAll('.sf-progress-dot');
+  dots.forEach(function(d, i) {
+    d.classList.remove('active', 'done');
+    if (i === 0) d.classList.add('active');
+  });
+}
+
+function submitStylePhone() {
+  var phone = document.getElementById('sfPhone').value.trim();
+  if (!phone) { alert('Please enter your phone number'); return; }
+  saveLead('', phone, 'style-finder');
+  alert('Thanks! We\'ll text you style inspiration soon.');
+  document.getElementById('sfPhone').value = '';
+}
+
+// ═══════ CONSULTATION PHONE ═══════
+function submitConsultPhone() {
+  var phone = document.getElementById('consultPhone').value.trim();
+  if (!phone) { alert('Please enter your phone number'); return; }
+  saveLead('', phone, 'consultation');
+  alert('Got it! We\'ll text you style advice shortly.');
+  document.getElementById('consultPhone').value = '';
+}
+
+// ═══════ GALLERY LIGHTBOX ═══════
+var galleryImages = [
+  'assets/images/shop-1.jpg',
+  'assets/images/shop-2.jpg',
+  'assets/images/shop-3.jpg',
+  'assets/images/shop-4.jpg',
+  'assets/images/shop-5.jpg',
+  'assets/images/shop-6.jpg',
+  'assets/images/barber-action.png',
+  'assets/images/hero-interior.png'
+];
+var currentLightbox = 0;
+
+function openLightbox(idx) {
+  currentLightbox = idx;
+  document.getElementById('lightboxImg').src = galleryImages[idx];
+  document.getElementById('lightbox').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('show');
+  document.body.style.overflow = '';
+}
+
+function navLightbox(dir) {
+  currentLightbox = (currentLightbox + dir + galleryImages.length) % galleryImages.length;
+  document.getElementById('lightboxImg').src = galleryImages[currentLightbox];
+}
+
+// Keyboard navigation for lightbox
+document.addEventListener('keydown', function(e) {
+  var lb = document.getElementById('lightbox');
+  if (!lb.classList.contains('show')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') navLightbox(-1);
+  if (e.key === 'ArrowRight') navLightbox(1);
+});
+
+// Click backdrop to close lightbox
+document.getElementById('lightbox').addEventListener('click', function(e) {
+  if (e.target === this) closeLightbox();
+});
+
+// ═══════ PHONE FORMAT ═══════
+document.querySelectorAll('input[type="tel"]').forEach(function(input) {
+  input.addEventListener('input', function() {
+    var v = this.value.replace(/\D/g, '');
+    if (v.length >= 6) v = '(' + v.slice(0, 3) + ') ' + v.slice(3, 6) + '-' + v.slice(6, 10);
+    else if (v.length >= 3) v = '(' + v.slice(0, 3) + ') ' + v.slice(3);
+    this.value = v;
+  });
+});
+
+// ═══════ INIT ═══════
+updateUI();
+
+// Click outside modal to close
+document.getElementById('authModal').addEventListener('click', function(e) { if (e.target === this) closeAuth(); });
+</script>
+
+</body>
+</html>
